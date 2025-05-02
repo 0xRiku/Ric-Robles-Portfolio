@@ -1,7 +1,5 @@
-/* Import Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
-/* Import Roboto Mono font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 
 * {
@@ -33,7 +31,6 @@ a:hover {
     padding: 0 20px;
 }
 
-/* Header Styles */
 .sticky-header {
     position: fixed;
     top: 0;
@@ -51,7 +48,6 @@ a:hover {
     transform: translateY(-100%);
 }
 
-/* Make header non-sticky on other pages */
 .not-home .sticky-header {
     position: relative;
     transform: none !important;
@@ -65,7 +61,6 @@ a:hover {
     outline: none;
 }
 
-/* Remove focus-visible styles */
 .sticky-header a,
 .sticky-header button {
     outline: none;
@@ -86,7 +81,6 @@ a:hover {
     background: transparent;
 }
 
-/* Add this new class for header background opacity */
 .header-scrolled {
     background-color: var(--primary-bg);
     backdrop-filter: blur(8px);
@@ -135,7 +129,6 @@ nav ul li a:focus {
     outline: none;
 }
 
-/* Theme Selector Styles */
 .theme-selector {
     margin-right: 1rem;
 }
@@ -164,7 +157,6 @@ nav ul li a:focus {
     transform: rotate(180deg);
 }
 
-/* Add animation when theme changes */
 .dark .theme-toggle i {
     transform: rotate(360deg);
 }
@@ -173,7 +165,6 @@ nav ul li a:focus {
     transform: rotate(0deg);
 }
 
-/* Resume button styles */
 .resume-button {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -190,7 +181,6 @@ nav ul li a:focus {
     color: #ffffff;
 }
 
-/* Dark mode styles */
 .dark .resume-button {
     color: #000000;
 }
@@ -199,7 +189,6 @@ nav ul li a:focus {
     color: #000000;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -306,7 +295,6 @@ nav ul li a:focus {
     border: 1px solid var(--accent-color);
 }
 
-/* Light mode hover effect */
 body:not(.dark) .code-card {
     box-shadow: 0 1px 2px 0 rgba(124, 58, 237, 0.05);
 }
@@ -316,7 +304,6 @@ body:not(.dark) .code-card:hover {
     box-shadow: 0 12px 24px -8px rgba(124, 58, 237, 0.15);
 }
 
-/* Dark mode hover effect */
 .dark .code-card {
     background-color: #000000;
     border: 1px solid var(--accent-color);
@@ -356,7 +343,6 @@ body:not(.dark) .code-card:hover {
     color: rgb(107, 114, 128);
 }
 
-/* Pointer tracking glow effect */
 .code-card {
     --bg: hsl(246 44% 7%);
     --border: hsl(280 10% 50% / 1);
@@ -418,14 +404,12 @@ body:not(.dark) .code-card:hover {
     z-index: 1;
 }
 
-/* Dark mode adjustments */
 .dark .code-card::before,
 .dark .code-card::after {
     --border: hsl(280 10% 30% / 1);
     filter: brightness(0.8);
 }
 
-/* Code content styles - identical for both themes */
 .code-content {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.875rem;
@@ -470,7 +454,6 @@ body:not(.dark) .code-card:hover {
     padding-left: 1.5rem;
 }
 
-/* Code syntax colors */
 .code-line .code-comment {
     color: var(--code-comment);
 }
@@ -499,7 +482,6 @@ body:not(.dark) .code-card:hover {
     color: var(--code-text);
 }
 
-/* Dark mode code content styles - exactly matching light mode */
 .dark .code-content {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.875rem;
@@ -548,7 +530,6 @@ body:not(.dark) .code-card:hover {
     font-weight: normal;
 }
 
-/* Code syntax colors - ensure no bold text */
 .dark .code-line .code-comment {
     color: var(--code-comment);
     font-weight: normal;
@@ -588,7 +569,6 @@ body:not(.dark) .code-card:hover {
 .dark .dot-yellow { background-color: rgb(234, 179, 8); }
 .dark .dot-green { background-color: rgb(34, 197, 94); }
 
-/* Button Styles */
 .primary-btn {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -625,7 +605,6 @@ body:not(.dark) .code-card:hover {
     color: white;
 }
 
-/* Update button styles for dark theme */
 .dark .primary-btn {
     background: var(--accent-color);
     color: #ffffff;
@@ -650,7 +629,6 @@ body:not(.dark) .code-card:hover {
     transform: translateY(-2px);
 }
 
-/* Update project card styles for dark theme */
 .dark .project-card {
     background: var(--secondary-bg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -662,7 +640,6 @@ body:not(.dark) .code-card:hover {
     color: var(--accent-color);
 }
 
-/* Update achievement card styles for dark theme */
 .dark .achievement-card {
     background: var(--secondary-bg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -674,7 +651,6 @@ body:not(.dark) .code-card:hover {
     box-shadow: 0 4px 12px rgba(75, 75, 251, 0.3);
 }
 
-/* Update form styles for dark theme */
 .dark input {
     background: var(--secondary-bg);
     border-color: var(--border-color);
@@ -686,7 +662,6 @@ body:not(.dark) .code-card:hover {
     box-shadow: 0 0 0 2px rgba(75, 75, 251, 0.2);
 }
 
-/* Update scrollbar for dark theme */
 .dark ::-webkit-scrollbar-track {
     background: var(--secondary-bg);
 }
@@ -699,23 +674,19 @@ body:not(.dark) .code-card:hover {
     background: var(--accent-color-hover);
 }
 
-/* Update selection color for dark theme */
 .dark ::selection {
     background: var(--accent-color);
     color: #ffffff;
 }
 
-/* Update focus styles for dark theme */
 .dark :focus {
     outline-color: var(--accent-color);
 }
 
-/* Update mobile menu styles for dark theme */
 .dark .mobile-menu-toggle span {
     background: var(--heading-color);
 }
 
-/* About Section */
 .about {
     padding: 100px 0;
     background: var(--secondary-bg);
@@ -741,7 +712,6 @@ body:not(.dark) .code-card:hover {
     font-size: 2.5rem;
 }
 
-/* Accordion Styles */
 .accordion-item {
     margin-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
@@ -768,7 +738,6 @@ body:not(.dark) .code-card:hover {
     padding-bottom: 15px;
 }
 
-/* Projects Section */
 .projects {
     padding: 6rem 0;
     background: var(--primary-bg);
@@ -988,7 +957,6 @@ body:not(.dark) .code-card:hover {
     }
 }
 
-/* Dark theme specific styles */
 .dark .project-card {
     background: var(--card-bg);
     border-color: var(--border-color);
@@ -1022,7 +990,6 @@ body:not(.dark) .code-card:hover {
     border-color: var(--accent-color);
 }
 
-/* Achievements Section */
 .achievements {
     padding: 6rem 0;
     background: var(--primary-bg);
@@ -1201,7 +1168,6 @@ body:not(.dark) .code-card:hover {
     }
 }
 
-/* Dark theme specific styles */
 .dark .achievement-card {
     background: var(--card-bg);
     border-color: var(--border-color);
@@ -1229,7 +1195,6 @@ body:not(.dark) .code-card:hover {
     border-color: var(--accent-color);
 }
 
-/* Contact Section */
 .contact {
     padding: 100px 0;
     background: var(--primary-bg);
@@ -1355,7 +1320,6 @@ body:not(.dark) .code-card:hover {
     font-size: 1rem;
 }
 
-/* Dark theme contact section overrides */
 .dark .contact-card {
     background: var(--secondary-bg);
     border-color: var(--border-color);
@@ -1379,7 +1343,6 @@ body:not(.dark) .code-card:hover {
     box-shadow: 0 0 0 2px rgba(var(--accent-color-rgb), 0.2);
 }
 
-/* Mobile styles for contact section */
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
@@ -1400,7 +1363,6 @@ body:not(.dark) .code-card:hover {
     }
 }
 
-/* Mobile Menu */
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -1419,7 +1381,6 @@ body:not(.dark) .code-card:hover {
     transition: all 0.3s ease;
 }
 
-/* Add these new classes before the mobile styles */
 
 .desktop-only {
     display: flex;
@@ -1437,7 +1398,6 @@ body:not(.dark) .code-card:hover {
     transition: none;
 }
 
-/* Update the mobile styles */
 @media (max-width: 768px) {
     .desktop-only {
         display: none;
@@ -1447,7 +1407,6 @@ body:not(.dark) .code-card:hover {
         display: block;
     }
 
-    /* Hero Section Mobile */
     .hero {
         padding: 4rem 0;
         min-height: auto;
@@ -1494,7 +1453,6 @@ body:not(.dark) .code-card:hover {
         justify-content: center;
     }
 
-    /* Code Card Mobile */
     .code-card {
         padding: 1rem;
         font-size: 0.8rem;
@@ -1505,7 +1463,6 @@ body:not(.dark) .code-card:hover {
         font-size: 0.75rem;
     }
 
-    /* About Section Mobile */
     .about-section {
         padding: 3rem 1rem;
     }
@@ -1534,7 +1491,6 @@ body:not(.dark) .code-card:hover {
         justify-content: center;
     }
 
-    /* Skills Section Mobile */
     .skills {
         padding: 3rem 1rem;
     }
@@ -1548,7 +1504,6 @@ body:not(.dark) .code-card:hover {
         padding: 1.5rem;
     }
     
-    /* Projects Section Mobile */
     .projects {
         padding: 3rem 1rem;
     }
@@ -1562,7 +1517,6 @@ body:not(.dark) .code-card:hover {
         margin: 0 1rem;
     }
 
-    /* Achievements Section Mobile */
     .achievements {
         padding: 3rem 1rem;
     }
@@ -1572,7 +1526,6 @@ body:not(.dark) .code-card:hover {
         gap: 2rem;
     }
 
-    /* Contact Section Mobile */
     footer {
         padding: 3rem 1rem;
     }
@@ -1587,7 +1540,6 @@ body:not(.dark) .code-card:hover {
         padding: 0.75rem;
     }
 
-    /* Navigation Mobile */
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -1646,7 +1598,6 @@ body:not(.dark) .code-card:hover {
         transform: translateY(-7px) rotate(-45deg);
     }
 
-    /* Mobile Navigation Styles */
     .mobile-contact-info {
         margin-top: 2rem;
         padding: 1rem;
@@ -1684,7 +1635,6 @@ body:not(.dark) .code-card:hover {
         margin: 1rem 0;
     }
 
-    /* Ensure all text in mobile menu is centered */
     .nav-wrapper {
         text-align: center;
     }
@@ -1700,7 +1650,6 @@ body:not(.dark) .code-card:hover {
     }
 }
 
-/* Dark theme overrides for mobile contact info */
 .dark .mobile-contact-info {
     border-color: var(--border-color);
 }
@@ -1713,7 +1662,6 @@ body:not(.dark) .code-card:hover {
     color: var(--accent-color);
 }
 
-/* Smaller mobile devices */
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 2rem;
@@ -1765,7 +1713,6 @@ body:not(.dark) .code-card:hover {
     }
 }
 
-/* Accessibility */
 .skip-link {
     position: absolute;
     top: -40px;
@@ -1781,19 +1728,16 @@ body:not(.dark) .code-card:hover {
     top: 0;
 }
 
-/* Selection color */
 ::selection {
     background: var(--accent-color);
     color: #ffffff;
 }
 
-/* Focus styles */
 :focus {
     outline: 2px solid var(--accent-color);
     outline-offset: 2px;
 }
 
-/* Scrollbar styles */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -1813,7 +1757,6 @@ body:not(.dark) .code-card:hover {
     background: #666;
 }
 
-/* Hide scrollbar when not scrolling */
 body:not(:hover)::-webkit-scrollbar-thumb {
     opacity: 0;
 }
@@ -1822,7 +1765,6 @@ body:hover::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-/* Skills Section */
 .skills {
     padding: 6rem 0;
     background: var(--primary-bg);
@@ -1971,7 +1913,6 @@ body:hover::-webkit-scrollbar-thumb {
     }
 }
 
-/* Dark theme specific styles */
 .dark .skill-category {
     background: var(--card-bg);
     border-color: var(--border-color);
@@ -1997,7 +1938,6 @@ body:hover::-webkit-scrollbar-thumb {
     background: var(--accent-color);
 }
 
-/* Interactive elements keep their transitions */
 .primary-btn,
 .secondary-btn,
 .theme-toggle,
@@ -2005,7 +1945,6 @@ body:hover::-webkit-scrollbar-thumb {
     transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
-/* Remove transition from header scroll */
 .header-scrolled {
     background-color: var(--primary-bg);
     backdrop-filter: blur(8px);
@@ -2056,7 +1995,6 @@ body:hover::-webkit-scrollbar-thumb {
     color: var(--text-color);
 }
 
-/* Dark mode styles */
 .dark .notification {
     background: rgb(17, 24, 39);
     border: 1px solid rgb(31, 41, 55);
@@ -2188,7 +2126,6 @@ body:hover::-webkit-scrollbar-thumb {
     margin-bottom: 0;
 }
 
-/* Responsive styles remain the same */
 @media (max-width: 1024px) {
     .about-card {
         padding: 20px;
@@ -2226,7 +2163,6 @@ body:hover::-webkit-scrollbar-thumb {
     }
 }
 
-/* Dark theme overrides */
 .dark .about-profile,
 .dark .about-card {
     background: var(--secondary-bg);
@@ -2249,7 +2185,6 @@ body:hover::-webkit-scrollbar-thumb {
     color: var(--heading-color);
 }
 
-/* Floating code styles */
 .floating-code {
     position: absolute;
     font-size: 0.4rem;
@@ -2274,7 +2209,6 @@ body:hover::-webkit-scrollbar-thumb {
     font-weight: 500;
 }
 
-/* Dark mode styles for floating code */
 .dark .floating-code {
     color: var(--accent-color);
     opacity: 0.4;
@@ -2288,7 +2222,6 @@ body:hover::-webkit-scrollbar-thumb {
                  0 0 30px var(--accent-color);
 }
 
-/* Typing effect styles */
 .typing-line {
     opacity: 0;
     white-space: pre;
@@ -2296,7 +2229,7 @@ body:hover::-webkit-scrollbar-thumb {
     width: 0;
     display: block;
     position: relative;
-    animation: none; /* Reset any default animations */
+    animation: none;
 }
 
 .typing-line.typed {
@@ -2304,7 +2237,6 @@ body:hover::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-/* Cursor styles */
 .typing-line::after {
     content: '';
     position: absolute;
@@ -2326,7 +2258,6 @@ body:hover::-webkit-scrollbar-thumb {
     position: relative;
 }
 
-/* Set typing duration for realistic speed */
 .typing-line:nth-child(1) {
     --char-count: 19;
     --typing-duration: 2.375s;
@@ -2385,7 +2316,6 @@ body:hover::-webkit-scrollbar-thumb {
     50% { opacity: 0; }
 }
 
-/* Dark mode - remove all shadows */
 .dark .code-content {
     text-shadow: none;
     box-shadow: none;
@@ -2399,7 +2329,6 @@ body:hover::-webkit-scrollbar-thumb {
     text-shadow: none !important;
 }
 
-/* Footer Section */
 .site-footer {
     background: #7c3aed49;
     color: #ffffff;
@@ -2468,7 +2397,6 @@ body:hover::-webkit-scrollbar-thumb {
     opacity: 0.8;
 }
 
-/* Responsive Footer */
 @media (max-width: 900px) {
     .footer-container {
         flex-direction: column;
@@ -2486,7 +2414,6 @@ body:hover::-webkit-scrollbar-thumb {
     }
 }
 
-/* Dark mode overrides */
 .dark .site-footer {
     background: #4c1d95;
     color: #f8fafc;
