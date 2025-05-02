@@ -48,7 +48,6 @@
     --card-bg: rgba(139, 92, 246, 0.05);
 }
 
-/* Dark theme footer styles */
 .dark .site-footer {
     background: #4d1d9552;
     color: #f8fafc;
@@ -76,7 +75,6 @@
     color: #f8fafc;
 }
 
-/* Remove transitions from theme changes */
 .dark .sticky-header,
 .dark .header-content,
 .dark nav,
@@ -85,7 +83,6 @@
     transition: none;
 }
 
-/* Keep transitions for interactive elements only */
 .dark .primary-btn,
 .dark .secondary-btn,
 .dark .theme-toggle,
@@ -93,7 +90,6 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
-/* Dark theme specific overrides */
 .dark .primary-btn {
     background: var(--accent-color);
     color: #ffffff;
@@ -179,7 +175,6 @@
     background: var(--heading-color);
 }
 
-/* Skill category styles */
 .dark .skill-category {
     background: var(--card-bg);
     border: 1px solid rgba(139, 92, 246, 0.1);
@@ -346,7 +341,6 @@
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
-/* Dark theme achievement styles */
 .dark .achievements {
     background: var(--primary-bg);
 }
@@ -385,7 +379,6 @@
     color: #ffffff;
 }
 
-/* Dark theme skills styles */
 .dark .skills {
     background: var(--primary-bg);
 }
@@ -410,7 +403,6 @@
     color: #ffffff;
 }
 
-/* Dark theme project styles */
 .dark .projects {
     background: var(--primary-bg);
 }
