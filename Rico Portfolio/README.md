@@ -24,18 +24,18 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
    - Experience Timeline
    - Skills Tags
 
-3. Skills Section
-   - Categorized Skills Display
-   - Interactive Skill Cards
-   - Hover Animations
-   - Icon Integration
-
-4. Projects Section
+3. Projects Section
    - Project Cards with Images
    - Live Demo Links
    - GitHub Repository Links
    - Technology Tags
    - Hover Effects
+
+4. Skills Section
+   - Categorized Skills Display
+   - Interactive Skill Cards
+   - Hover Animations
+   - Icon Integration
 
 5. Achievements Section
    - Horizontal Scrollable Cards
