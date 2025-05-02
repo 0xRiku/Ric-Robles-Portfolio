@@ -1,4 +1,3 @@
-/* Floating Code Elements */
 .floating-codes {
     position: absolute;
     top: 0;
@@ -27,13 +26,11 @@
     z-index: 1000;
 }
 
-/* Varied sizes */
 .floating-code:nth-child(odd) { font-size: 28px; }
 .floating-code:nth-child(even) { font-size: 24px; }
 .floating-code:nth-child(3n) { font-size: 32px; }
 .floating-code:nth-child(3n+1) { font-size: 26px; }
 
-/* Dark mode styles */
 .dark .floating-code {
     opacity: 0.15;
 }
@@ -42,7 +39,6 @@
     opacity: 0.6;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .floating-code {
         font-size: 20px !important;
