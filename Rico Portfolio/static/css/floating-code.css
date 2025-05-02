@@ -1,0 +1,50 @@
+/* Floating Code Elements */
+.floating-codes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.floating-code {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-color);
+    opacity: 0.2;
+    cursor: grab;
+    user-select: none;
+    font-size: 24px;
+    will-change: transform;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-code.dragging {
+    cursor: grabbing;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+/* Varied sizes */
+.floating-code:nth-child(odd) { font-size: 28px; }
+.floating-code:nth-child(even) { font-size: 24px; }
+.floating-code:nth-child(3n) { font-size: 32px; }
+.floating-code:nth-child(3n+1) { font-size: 26px; }
+
+/* Dark mode styles */
+.dark .floating-code {
+    opacity: 0.15;
+}
+
+.dark .floating-code.dragging {
+    opacity: 0.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .floating-code {
+        font-size: 20px !important;
+    }
+} 

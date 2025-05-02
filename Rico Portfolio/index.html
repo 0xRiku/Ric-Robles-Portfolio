@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ric Robles - Front-End Developer & Information Technology Student">
+    <title>Ric Robles | Portfolio</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/theme.css">
+    <link rel="stylesheet" href="static/css/floating-code.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="light home-page">
+    <div class="notification" id="download-notification">
+        <div class="notification-title">Downloading Resume</div>
+        <div class="notification-message">Your download will start shortly.</div>
+    </div>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sticky-header" role="banner">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Back to top">RIC ROBLES</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-wrapper">
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="mobile-only">
+                            <a href="#" class="resume-button">Resume</a>
+                            <div class="mobile-contact-info">
+                                <a href="mailto:ricdrobles@gmail.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    ricdrobles@gmail.com
+                                </a>
+                                <a href="tel:+639123456789" class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    +63 912 345 6789
+                                </a>
+                                <a href="https://www.linkedin.com/in/ricrobles" class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    linkedin.com/in/ricrobles
+                                </a>
+                                <a href="https://github.com/ricrobles" class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    github.com/ricrobles
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-links desktop-only">
+                    <div class="theme-selector">
+                        <button class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="resume-button">Resume</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero" id="home">
+            <div class="floating-codes">
+                <!-- Educational -->
+                <div class="floating-code left-side" data-speed="2.1">PLSP</div>
+                <div class="floating-code right-side" data-speed="1.8">CCST</div>
+                <div class="floating-code left-side" data-speed="2.3">Recto</div>
+
+                <!-- Blockchain & Crypto -->
+                <div class="floating-code right-side" data-speed="2.4">Blockchain</div>
+                <div class="floating-code left-side" data-speed="1.7">Crypto</div>
+                <div class="floating-code right-side" data-speed="1.5">NFT</div>
+                <div class="floating-code left-side" data-speed="2.0">Bitcoin</div>
+
+                <!-- AI & Data -->
+                <div class="floating-code right-side" data-speed="2.2">AI</div>
+                <div class="floating-code left-side" data-speed="1.6">Data</div>
+                <div class="floating-code right-side" data-speed="1.9">Cloud</div>
+
+                <!-- Security & Infrastructure -->
+                <div class="floating-code left-side" data-speed="2.3">CyberSecurity</div>
+                <div class="floating-code right-side" data-speed="1.8">Networking</div>
+                <div class="floating-code left-side" data-speed="2.1">Quantum</div>
+                <div class="floating-code right-side" data-speed="1.4">5G</div>
+                <div class="floating-code left-side" data-speed="1.7">Automation</div>
+
+                <!-- Arithmetic symbols -->
+                <div class="floating-code left-side" data-speed="1.6">+</div>
+                <div class="floating-code right-side" data-speed="1.7">-</div>
+                <div class="floating-code left-side" data-speed="1.8">*</div>
+                <div class="floating-code right-side" data-speed="1.9">/</div>
+
+                <!-- Top 5 coding languages -->
+                <div class="floating-code left-side" data-speed="2.0">JavaScript</div>
+                <div class="floating-code right-side" data-speed="2.1">Python</div>
+                <div class="floating-code left-side" data-speed="2.2">Java</div>
+                <div class="floating-code right-side" data-speed="2.3">C++</div>
+                <div class="floating-code left-side" data-speed="2.4">PHP</div>
+
+                <!-- New coding symbols -->
+                <div class="floating-code right-side" data-speed="2.2">{}</div>
+                <div class="floating-code left-side" data-speed="1.9">[]</div>
+                <div class="floating-code right-side" data-speed="2.0">()</div>
+                <div class="floating-code left-side" data-speed="1.8">&&</div>
+                <div class="floating-code right-side" data-speed="2.1">||</div>
+                <div class="floating-code left-side" data-speed="1.7">=></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h4>Hello! I'm</h4>
+                    <h1>Ric <span>Robles</span></h1>
+                    <p class="title">Self-taught Front-End Developer</p>
+                    <p class="description">I build websites with a focus on user experience and design.</p>
+                    <div class="hero-actions">
+                        <div class="hero-buttons">
+                            <a href="#contact" class="primary-btn">Contact Me</a>
+                            <a href="#projects" class="secondary-btn">View Projects</a>
+                        </div>
+                        <div class="hero-social-links">
+                            <a href="#" aria-label="GitHub Profile" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn Profile" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" aria-label="Email" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-card">
+                    <div class="code-header">
+                        <div class="dots">
+                            <div class="dot dot-red"></div>
+                            <div class="dot dot-yellow"></div>
+                            <div class="dot dot-green"></div>
+                        </div>
+                        <span class="code-filename">developer.js</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line typing-line"><span class="code-comment">// Website developer</span></div>
+                        <div class="code-line typing-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> <span class="code-text">=</span> <span class="code-operator">{</span></div>
+                        <div class="code-line typing-line indented"><span class="code-property">name</span><span class="code-text">:</span> <span class="code-string">'Ric Robles'</span><span class="code-text">,</span></div>
+                        <div class="code-line typing-line indented"><span class="code-property">skills</span><span class="code-text">:</span> <span class="code-operator">[</span><span class="code-string">'HTML'</span><span class="code-text">,</span> <span class="code-string">'CSS'</span><span class="code-text">,</span> <span class="code-string">'JavaScript'</span><span class="code-operator">]</span><span class="code-text">,</span></div>
+                        <div class="code-line typing-line indented"><span class="code-property">focuses</span><span class="code-text">:</span> <span class="code-operator">[</span><span class="code-string">'Front-End'</span><span class="code-text">,</span> <span class="code-string">'UI/UX'</span><span class="code-operator">]</span><span class="code-text">,</span></div>
+                        <div class="code-line typing-line indented"><span class="code-property">learning</span><span class="code-text">:</span> <span class="code-string">'Always'</span></div>
+                        <div class="code-line typing-line"><span class="code-operator">}</span><span class="code-text">;</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="section-header" style="text-align: left; margin-bottom: 32px;">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-profile">
+                    <div class="about-profile-pic">
+                        <img src="static/images/ricrobles.jpg" alt="Ric Robles Profile Picture" />
+                    </div>
+                    <div class="about-profile-info">
+                        <h3>Ric Robles</h3>
+                        <p>Front-End Developer & Information Technology Student</p>
+                        <div class="about-tags">
+                            <span class="about-tag">HTML/CSS</span>
+                            <span class="about-tag">JavaScript</span>
+                            <span class="about-tag">UI/UX</span>
+                            <span class="about-tag">Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                            <span class="about-card-icon" style="font-size: 1.5rem;"><i class="fas fa-graduation-cap"></i></span>
+                            <h3 style="margin: 0; font-size: 1.5rem;">Education</h3>
+                        </div>
+                        <ul style="padding-left: 1.2em;">
+                            <li><strong>Undergraduate, BSIT</strong> – Pamantasan ng Lungsod ng San Pablo (2023 - Present)</li>
+                            <li><strong>Senior High School, HUMSS</strong> – Recto Memorial National High School (2021 - 2022)</li>
+                            <li><strong>Junior High School</strong> – Recto Memorial National High School (2017 - 2021)</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                            <span class="about-card-icon" style="font-size: 1.5rem;"><i class="fas fa-briefcase"></i></span>
+                            <h3 style="margin: 0; font-size: 1.5rem;">Experience</h3>
+                        </div>
+                        <ul style="padding-left: 1.2em;">
+                            <li><strong>Graphic Designer</strong> – Kaya Natin Youth Tiaong (2024 - Present)</li>
+                            <li><strong>Graphic Designer</strong> – PLSP National Service Reserve Corps (2024 - Present)</li>
+                            <li><strong>Social Media Manager/Graphic Designer</strong> – PLSP CCST Information Technology Society (2023 - Present)</li>
+                            <li><strong>Social Media Manager/Graphic Designer</strong> – PLSP Council of Interior Governance (2023 - Present)</li>
+                            <li><strong>Social Media Manager/Graphic Designer</strong> – DepEd Tayo - Youth Formation, Recto Memorial National High School (2022 - 2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="projects-title">Projects</h2>
+                    <p class="projects-description">Here are some of my recent projects that showcase my skills and experience.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" tabindex="0">
+                            <div class="project-image">
+                            <img src="static/images/py-scrap.jpg" alt="Library Management System" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Library Management System</h3>
+                            <p class="project-description">Lorem Ipsum</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ricrobles/py-scrap" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="https://py-scrap.demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" tabindex="0">
+                        <div class="project-image">
+                            <img src="static/images/msr-tailor.jpg" alt="Tiny College" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tiny College</h3>
+                            <p class="project-description">Lorem Ipsum</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ricrobles/msr-tailor" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="https://msr-tailor.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" tabindex="0">
+                            <div class="project-image">
+                            <img src="static/images/internship-finder.jpg" alt="Enrollment System" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Enrollment System</h3>
+                            <p class="project-description">Lorem Ipsum</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ricrobles/internship-finder" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="https://internship-finder.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                <div class="show-more">
+                    <a href="https://github.com/ricrobles" class="show-more-btn" target="_blank" rel="noopener noreferrer">
+                        View More Projects
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+                <!-- Skills Section -->
+                <section class="skills" id="skills">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="skills-title">Skills</h2>
+                            <p class="skills-description">I've worked with a range of technologies in the web development world, from frontend to backend and everything in between.</p>
+                        </div>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-code category-icon"></i>
+                                    <h3 class="category-title">Programming Languages</h3>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    </div>
+                                    </div>
+        
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-desktop category-icon"></i>
+                                    <h3 class="category-title">Frontend Development</h3>
+                                    </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">TailwindCSS</span>
+                                    <span class="skill-tag">Material UI</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                </div>
+                            </div>
+        
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-server category-icon"></i>
+                                    <h3 class="category-title">Backend Development</h3>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express</span>
+                                    <span class="skill-tag">Django</span>
+                                    <span class="skill-tag">RESTful APIs</span>
+                                    <span class="skill-tag">GraphQL</span>
+                                </div>
+                                    </div>
+        
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-database category-icon"></i>
+                                    <h3 class="category-title">Databases</h3>
+                                    </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">Firebase</span>
+                                    <span class="skill-tag">Redis</span>
+                                </div>
+                            </div>
+        
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-tools category-icon"></i>
+                                    <h3 class="category-title">Tools & Technologies</h3>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Linux</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    </div>
+                                    </div>
+        
+                            <div class="skill-category" tabindex="0">
+                                <div class="category-header">
+                                    <i class="fas fa-paint-brush category-icon"></i>
+                                    <h3 class="category-title">Design</h3>
+                                    </div>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                    <span class="skill-tag">UI/UX</span>
+                                    <span class="skill-tag">Wireframing</span>
+                                    <span class="skill-tag">Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements" id="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="achievements-title">Achievements</h2>
+                    <p class="achievements-description">Notable milestones and recognitions in my journey.</p>
+                </div>
+                
+                <div class="drag-instruction">
+                    <i class="fas fa-arrows-left-right"></i>
+                    <span>Drag to explore</span>
+                </div>
+
+                <div class="achievements-grid" role="list" aria-label="Achievements list">
+                    <div class="achievement-card" role="listitem" tabindex="0">
+                        <div class="achievement-year">2023</div>
+                        <i class="fas fa-award achievement-icon"></i>
+                        <h3 class="achievement-title">Dean's List</h3>
+                        <p class="achievement-description">Recognized for academic excellence with a GPA of 1.5, demonstrating consistent high performance.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">Academic</span>
+                            <span class="achievement-tag">Excellence</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" role="listitem" tabindex="0">
+                        <div class="achievement-year">2024</div>
+                        <i class="fas fa-certificate achievement-icon"></i>
+                        <h3 class="achievement-title">Canva Certification</h3>
+                        <p class="achievement-description">Lorem Ipsum</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">Graphic Design</span>
+                            <span class="achievement-tag">Certification</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" role="listitem" tabindex="0">
+                        <div class="achievement-year">2023</div>
+                        <i class="fas fa-certificate achievement-icon"></i>
+                        <h3 class="achievement-title">Python Certification</h3>
+                        <p class="achievement-description">Completed advanced Python programming certification, mastering data structures and algorithms.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">Python</span>
+                            <span class="achievement-tag">Certification</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" role="listitem" tabindex="0">
+                        <div class="achievement-year">2023</div>
+                        <i class="fas fa-database achievement-icon"></i>
+                        <h3 class="achievement-title">SQL Certification</h3>
+                        <p class="achievement-description">Earned certification in SQL and database management, including advanced querying and optimization.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">SQL</span>
+                            <span class="achievement-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-navigation">
+                    <button class="nav-button prev-button" aria-label="Previous achievement">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-button next-button" aria-label="Next achievement">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have a question or want to work together? Feel free to drop me a message. I'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3>Email</h3>
+                        </div>
+                        <p>ricrobles@gmail.com</p>
+                        <a href="mailto:ricdrobles@gmail.com" class="contact-link">Send Email</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h3>Phone</h3>
+                        </div>
+                        <p>+63 967 018 4833</p>
+                        <a href="tel:+9670184833" class="contact-link">Call Now</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h3>Location</h3>
+                        </div>
+                        <p>Quezon, Philippines</p>
+                        <a href="https://maps.google.com/?q=Quezon,Philippines" target="_blank" class="contact-link">View on Map</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">RR.</div>
+                <div class="footer-tagline">I build website with a focus on user experience and design.</div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://github.com/ricrobles" aria-label="GitHub" target="_blank" rel="noopener" tabindex="0"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ricrobles" aria-label="LinkedIn" target="_blank" rel="noopener" tabindex="0"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ricdrobles@gmail.com" aria-label="Email" tabindex="0"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="footer-copyright">© 2025 Ric Robles | Built with HTML, CSS, and JavaScript</div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="static/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const body = document.body;
+            const icon = themeToggle.querySelector('i');
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark');
+                icon.className = 'fas fa-sun';
+            }
+
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark');
+                const isDark = body.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            });
+
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navWrapper = document.querySelector('.nav-wrapper');
+            
+            mobileMenuToggle.addEventListener('click', () => {
+                const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+                mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+                navWrapper.setAttribute('aria-expanded', !isExpanded);
+                
+                document.body.style.overflow = isExpanded ? '' : 'hidden';
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                    navWrapper.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').slice(1);
+                    const target = document.getElementById(targetId);
+                    
+                    if (target) {
+                        if (targetId === 'top') {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        } else {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                        navWrapper.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const email = document.getElementById('contact-email').value;
+                    console.log('Form submitted:', email);
+                });
+            }
+
+            const typingLines = document.querySelectorAll('.typing-line');
+            const codeContent = document.querySelector('.code-content');
+            
+            function moveCursorToNextLine(currentLine) {
+                currentLine.classList.remove('active');
+                const nextLine = currentLine.nextElementSibling;
+                if (nextLine && nextLine.classList.contains('typing-line')) {
+                    nextLine.classList.add('active');
+                } else {
+                    codeContent.classList.add('all-typed');
+                }
+            }
+
+            typingLines[0].classList.add('active');
+
+            typingLines.forEach((line, index) => {
+                const delay = parseFloat(getComputedStyle(line).getPropertyValue('--typing-delay'));
+                const duration = parseFloat(getComputedStyle(line).getPropertyValue('--typing-duration'));
+                const charCount = parseInt(getComputedStyle(line).getPropertyValue('--char-count'));
+                
+                line.style.animation = `typing ${duration}s steps(${charCount}) ${delay}s forwards`;
+                
+                setTimeout(() => {
+                    line.classList.add('typed');
+                    moveCursorToNextLine(line);
+                }, (delay + duration) * 1000);
+            });
+
+            const glowCodeCard = document.querySelector('.code-card');
+            const CONFIG = {
+                proximity: 40,
+                spread: 80,
+                blur: 20,
+                opacity: 0,
+            };
+
+            const updateGlow = (event) => {
+                if (!glowCodeCard) return;
+
+                const bounds = glowCodeCard.getBoundingClientRect();
+                const center = [
+                    bounds.left + bounds.width * 0.5,
+                    bounds.top + bounds.height * 0.5
+                ];
+
+                if (
+                    event?.x > bounds.left - CONFIG.proximity &&
+                    event?.x < bounds.left + bounds.width + CONFIG.proximity &&
+                    event?.y > bounds.top - CONFIG.proximity &&
+                    event?.y < bounds.top + bounds.height + CONFIG.proximity
+                ) {
+                    glowCodeCard.style.setProperty('--active', 1);
+                } else {
+                    glowCodeCard.style.setProperty('--active', CONFIG.opacity);
+                }
+
+                let angle = Math.atan2(event?.y - center[1], event?.x - center[0]) * 180 / Math.PI;
+                angle = angle < 0 ? angle + 360 : angle;
+                glowCodeCard.style.setProperty('--start', angle + 90);
+            };
+
+            document.body.addEventListener('pointermove', updateGlow);
+        });
+    </script>
+
+    <script src="static/js/floating-code.js"></script>
+</body>
+</html>

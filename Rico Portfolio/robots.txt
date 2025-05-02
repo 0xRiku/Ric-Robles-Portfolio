@@ -1,0 +1,15 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /static/js/
+Disallow: /static/css/
+
+# Prevent caching of error pages
+Disallow: /404.html
+Disallow: /500.html
+
+# Sitemap location
+Sitemap: https://ricrobles.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10 

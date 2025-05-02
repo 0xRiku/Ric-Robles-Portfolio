@@ -1,0 +1,464 @@
+/* Light theme */
+:root {
+    --primary-bg: #f9f7fc;
+    --primary-bg-rgb: 250, 250, 250;
+    --secondary-bg: #f9f7fc;
+    --text-color: #4b5563;
+    --heading-color: #393456;
+    --accent-color: #7c3aed;
+    --accent-hover: #6d28d9;
+    --accent-color-rgb: 124, 58, 237;
+    --border-color: #e2e8f3;
+    --code-bg: #ffffff;
+    --code-text: #4b5563;
+    --code-comment: #6b7280;
+    --code-keyword: #db2777;
+    --code-string: #059669;
+    --code-property: #9333ea;
+    --code-variable: #2563eb;
+    --code-operator: #ea580c;
+    --shadow-color: rgba(124, 58, 237, 0.1);
+    --tag-bg: rgba(124, 58, 237, 0.05);
+    --tag-color: #7c3aed;
+    --card-bg: #ffffff;
+}
+
+/* Dark theme */
+.dark {
+    --primary-bg: #030919;
+    --primary-bg-rgb: 3, 9, 25;
+    --secondary-bg: #030919;
+    --text-color: #f8fafc;
+    --heading-color: #f8fafc;
+    --accent-color: #8b5cf6;
+    --accent-hover: #7c3aed;
+    --accent-color-rgb: 139, 92, 246;
+    --border-color: #4c1d95;
+    --code-bg: #000000;
+    --code-text: #c4b5fd;
+    --code-comment: #6b7280;
+    --code-keyword: #ec4899;
+    --code-string: #22c55e;
+    --code-property: #a78bfa;
+    --code-variable: #818cf8;
+    --code-operator: #f97316;
+    --shadow-color: rgba(139, 92, 246, 0.2);
+    --tag-bg: rgba(139, 92, 246, 0.1);
+    --tag-color: #8b5cf6;
+    --card-bg: rgba(139, 92, 246, 0.05);
+}
+
+/* Dark theme footer styles */
+.dark .site-footer {
+    background: #4d1d9552;
+    color: #f8fafc;
+    border-top: 1px solid transparent
+}
+
+.dark .footer-logo {
+    color: #8b5cf6;
+}
+
+.dark .footer-tagline {
+    color: #f8fafc;
+}
+
+.dark .footer-socials a {
+    color: #f8fafc;
+}
+
+.dark .footer-socials a:focus,
+.dark .footer-socials a:hover {
+    color: #8b5cf6;
+}
+
+.dark .footer-copyright {
+    color: #f8fafc;
+}
+
+/* Remove transitions from theme changes */
+.dark .sticky-header,
+.dark .header-content,
+.dark nav,
+.dark nav ul,
+.dark nav ul li a {
+    transition: none;
+}
+
+/* Keep transitions for interactive elements only */
+.dark .primary-btn,
+.dark .secondary-btn,
+.dark .theme-toggle,
+.dark .social-icon {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Dark theme specific overrides */
+.dark .primary-btn {
+    background: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+.dark .primary-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.dark .secondary-btn {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+.dark .secondary-btn:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.dark .code-card {
+    background-color: var( #030919);
+    border: 1px solid var(--border-color);
+}   
+
+.dark .project-card {
+    background: var(--code-bg);
+    border: 1px solid var(--border-color);
+}
+
+.dark .tech-tag {
+    background: transparent;
+}
+
+.dark .achievement-card {
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.dark .diamond-shape {
+    background: var(--accent-color);
+    box-shadow: 0 4px 12px rgba(129, 140, 248, 0.3);
+}
+
+.dark input {
+    background: var(--code-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: var(--code-bg);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-hover);
+}
+
+.dark ::selection {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.dark :focus {
+    outline-color: var(--accent-color);
+}
+
+.dark .mobile-menu-toggle span {
+    background: var(--heading-color);
+}
+
+/* Skill category styles */
+.dark .skill-category {
+    background: var(--card-bg);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.dark .skill-category:hover {
+    border-color: rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 30px -15px rgba(139, 92, 246, 0.3);
+}
+
+.dark .skill-item:hover {
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.dark .skill-item i {
+    color: var(--accent-color);
+}
+
+.dark .section-header h2 {
+    color: var(--heading-color);
+}
+
+.dark .section-header p {
+    color: var(--text-color);
+}
+
+.dark .hero-text h4 {
+    color: var(--accent-color);
+}
+
+.dark .hero-text h1 {
+    color: var(--heading-color);
+}
+
+.dark .hero-text h1 span {
+    color: var(--accent-color);
+}
+
+.dark .hero-text .title {
+    color: var(--heading-color);
+}
+
+.dark .hero-text .description {
+    color: var(--text-color);
+}
+
+.dark .code-header {
+    margin-bottom: 1.5rem;
+}
+
+.dark .code-filename {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.dark .code-line {
+    margin-bottom: 0.5rem;
+}
+
+.dark .code-line.indented {
+    padding-left: 1.5rem;
+}
+
+.dark .code-comment {
+    color: var(--code-comment);
+}
+
+.dark .code-keyword {
+    color: var(--code-keyword);
+}
+
+.dark .code-variable {
+    color: var(--code-variable);
+}
+
+.dark .code-operator {
+    color: var(--code-operator);
+}
+
+.dark .code-property {
+    color: var(--code-property);
+}
+
+.dark .code-string {
+    color: var(--code-string);
+}
+
+.dark .code-text {
+    color: var(--code-text);
+}
+
+.dark .dot-red {
+    background-color: #ef4444;
+}
+
+.dark .dot-yellow {
+    background-color: #eab308;
+}
+
+.dark .dot-green {
+    background-color: #22c55e;
+}
+
+.dark .about-section {
+    background: transparent;
+}
+
+.dark .about-main h2 {
+    color: transparent;
+}
+
+.dark .about-card {
+    background: transparent;
+    border: 1px solid rgb(31, 41, 55);
+    box-shadow: none;
+}
+
+.dark .about-card:hover {
+    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.2),
+                0 8px 16px -6px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+}
+
+.dark .about-card h3,
+.dark .about-card p {
+    color: #f8fafc;
+}
+
+.dark .about-card-icon {
+    color: var(--accent-color);
+}
+
+.dark .about-profile {
+    background: transparent;
+}
+
+.dark .about-profile h3 {
+    color: var(--heading-color);
+}
+
+.dark .about-profile p {
+    color: (#94A3B8);
+}
+
+.dark .about-tag {
+    background: transparent;
+    color: var(--accent-color);
+    outline: 0.5px solid var(--accent-color);
+}
+
+.dark .about-gpa {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.dark .about-resume-btn {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.dark .about-resume-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+/* Dark theme achievement styles */
+.dark .achievements {
+    background: var(--primary-bg);
+}
+
+.dark .achievement-card:hover {
+    border-color: rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 30px -15px rgba(139, 92, 246, 0.3);
+}
+
+.dark .achievement-year {
+    color: var(--accent-color);
+}
+
+.dark .achievement-title {
+    color: var(--heading-color);
+}
+
+.dark .achievement-description {
+    color: var(--text-color);
+}
+
+.dark .achievement-tag {
+    background: var(--tag-bg);
+    color: var(--tag-color);
+}
+
+.dark .nav-button {
+    background: rgba(139, 92, 246, 0.05);
+    border-color: rgba(139, 92, 246, 0.1);
+    color: var(--text-color);
+}
+
+.dark .nav-button:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Dark theme skills styles */
+.dark .skills {
+    background: var(--primary-bg);
+}
+
+.dark .category-icon {
+    color: var(--accent-color);
+}
+
+.dark .category-title {
+    color: var(--heading-color);
+}
+
+.dark .skill-tag {
+    background: var(--tag-bg);
+    border-color: rgba(139, 92, 246, 0.1);
+    color: var(--text-color);
+}
+
+.dark .skill-tag:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Dark theme project styles */
+.dark .projects {
+    background: var(--primary-bg);
+}
+
+.dark .project-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.dark .project-card:hover {
+    border-color: rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 30px -15px rgba(139, 92, 246, 0.3);
+}
+
+.dark .project-title {
+    color: var(--heading-color);
+}
+
+.dark .project-description {
+    color: var(--text-color);
+}
+
+.dark .project-tag {
+    background: var(--tag-bg);
+    color: var(--text-color);
+}
+
+.dark .project-link {
+    background: var(--tag-bg);
+    border-color: rgba(139, 92, 246, 0.1);
+    color: var(--text-color);
+}
+
+.dark .project-link:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.dark .show-more-btn {
+    background: var(--card-bg);
+    border-color: rgba(139, 92, 246, 0.1);
+    color: var(--text-color);
+}
+
+.dark .show-more-btn:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #ffffff;
+}
